@@ -1,0 +1,118 @@
+
+
+
+html{
+  scroll-behavior: smooth;
+  font-size: 17px;
+
+}
+
+body{
+  width: 100%;
+  font-family:   Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  background: #f86007;
+  color: antiquewhite;
+}
+
+
+.container{
+padding: 20px;
+
+
+width: 80%;
+
+}
+
+h3 {
+  font-family: monospace;
+  font-size: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  width: 60%;
+}
+form{
+  display: flex;
+}
+
+form  {
+  background: #ca6023;
+  border: 1px solid wheat;
+  padding: 10px;
+width: 70%;
+display: flex;
+
+justify-content: center;
+align-items: center;
+border-radius: 10px;
+margin: auto;
+}
+
+ label{
+ 
+ }
+
+ select{
+  border: none;
+  padding: 5px;
+  box-shadow: 0 0 5px;
+  border-radius: 5px;
+  text-align: center;
+  width: 60%;
+  border-style: none;
+  margin-top: 10px;
+ }
+
+
+ .scores{
+display: flex;
+margin: 40px 0;
+width: 100%;
+
+padding: 10px;
+justify-content: space-between ;
+font-size: 1rem;
+
+ }
+  .scores h1{
+    color: rgb(182, 223, 223);
+    font-size: 25px;
+    
+
+   
+   
+  }
+
+  .final{
+    text-align: center;
+  }
+
+  .scores p{
+    color:rgb(182, 223, 223) ;
+   text-align: center;
+    display: inline-block;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    box-shadow: 0 0 5px;
+    margin: auto;
+  }
+
+  input{
+    border-style: none;
+    padding: 5px;
+    width: 50px;
+    border-radius: 5px;
+    color: rgb(155, 67, 126);
+    box-shadow: 0 0 5px rgb(182, 223, 223);
+  }
+
+  button{
+    border-style: none;
+    padding: 8px;
+    border-radius: 5px;
+    color: rgb(155, 67, 126);
+    box-shadow: 0 0 5px rgb(182, 223, 223);
+    
+  }
