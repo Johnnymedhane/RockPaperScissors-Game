@@ -13,7 +13,7 @@ const div = document.getElementById('addbtn');
 
 
 
-
+/*
 
 // computer choice
 
@@ -115,13 +115,13 @@ console.log(`Final Score - player: ${humanScore}, Computer: ${computerScore}`);
 
 
 
-
+*/
 
 
 
 // with user interface!
 
-/*
+
 
 let humanScore = 0;
 
@@ -258,7 +258,7 @@ function finalResult () {
     result += `\n\nthe game is tie!`;
   }
 }
-*/
+
 
 
 
