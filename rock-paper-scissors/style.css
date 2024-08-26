@@ -14,40 +14,31 @@ body{
   justify-content: center;
   background: #f86007;
   color: antiquewhite;
+  min-height: 100vh;
+
 }
 
 
 .container{
-padding: 20px;
+padding: 10px;
 
-
+text-align: center;
 width: 80%;
 
 }
 
-h3 {
-  font-family: monospace;
-  font-size: 20px;
-  margin-bottom: 30px;
-  text-align: center;
-  width: 60%;
+h5 {
+  
+  
+ 
+  
+  
 }
 form{
   display: flex;
 }
 
-form  {
-  background: #ca6023;
-  border: 1px solid wheat;
-  padding: 10px;
-width: 70%;
-display: flex;
 
-justify-content: center;
-align-items: center;
-border-radius: 10px;
-margin: auto;
-}
 
  label{
  
@@ -59,15 +50,15 @@ margin: auto;
   box-shadow: 0 0 5px;
   border-radius: 5px;
   text-align: center;
-  width: 60%;
-  border-style: none;
-  margin-top: 10px;
+  width: 100px;
+  outline-style: none;
+ 
  }
 
 
  .scores{
 display: flex;
-margin: 40px 0;
+margin: 10px 0;
 width: 100%;
 
 padding: 10px;
@@ -102,17 +93,22 @@ font-size: 1rem;
   input{
     border-style: none;
     padding: 5px;
-    width: 50px;
+    width: 20px;
     border-radius: 5px;
     color: rgb(155, 67, 126);
     box-shadow: 0 0 5px rgb(182, 223, 223);
   }
 
-  button{
+  button{ 
     border-style: none;
     padding: 8px;
     border-radius: 5px;
-    color: rgb(155, 67, 126);
-    box-shadow: 0 0 5px rgb(182, 223, 223);
-    
+    color: grgb(31, 4, 22);
+    box-shadow: 0 0 2px rgb(182, 223, 223);
+    cursor: pointer;
+  }
+
+  span{
+    display: block;
+    margin: 10px 20% 0px;
   }
