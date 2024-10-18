@@ -1,5 +1,11 @@
 
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 
 html{
   scroll-behavior: smooth;
@@ -8,10 +14,12 @@ html{
 }
 
 body{
-  width: 100%;
+ 
+  
   font-family:   Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   justify-content: center;
+  align-items: center;
   background: #f86007;
   color: antiquewhite;
   min-height: 100vh;
@@ -22,93 +30,102 @@ body{
 .container{
 padding: 10px;
 
-text-align: center;
-width: 80%;
 
-}
-
-h5 {
-  
-  
- 
-  
-  
-}
-form{
-  display: flex;
+width: 70%;
+height: 600px;
+background: #947b6d86;
 }
 
 
+.header{
+  font-size: 1.3rem;
+  color: hsla(0, 14%, 73%, 0.967);
+  margin-bottom: 10px;
+}
 
- label{
- 
- }
 
- select{
+.play{
+  color: #cfc9c7;;
+  float: left;
+  margin-right: 15px;
+  transform: translateY(30px);
+}
+
+.btns{
+display: inline-block;
+  background: #4e433d;
+ border-radius: 5px;
+  
+}
+button{
   border: none;
-  padding: 5px;
-  box-shadow: 0 0 5px;
+  outline: none;
+  padding: 3px;
+  font-size: 3.8rem;
+  background: #734124;
+  cursor: pointer;
   border-radius: 5px;
+  box-shadow: 1px 1px 5px #cfc3bc;
+  margin: 10px;
+  transition: all 0.5s;
+}
+button:hover{
+  box-shadow: 1px 1px 15px #cfc3bc;
+  background: #37261d;
+}
+
+
+.display  h1{
+  font-size: 24px;
+  color: #cfc9c7;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+
+.score{
+ color: #cfc9c7;
+ font-size: 20px;
+  font-weight: bold;
+}
+
+
+.result{
+  color:  hsl(140, 13%, 87%);
+  font-size: 25px;
+}
+
+.win {
+  color: green;
+  font-weight: bold;
+}
+
+.lose {
+  color: rgba(170, 28, 28, 0.925);
+  font-weight: bold;
+}
+
+.tie {
+  color: white;
+  font-style: italic;
+}
+
+
+
+.new-game{
+  margin-top: 10px;
   text-align: center;
-  width: 100px;
-  outline-style: none;
- 
- }
+}
 
-
- .scores{
-display: flex;
-margin: 10px 0;
-width: 100%;
-
-padding: 10px;
-justify-content: space-between ;
-font-size: 1rem;
-
- }
-  .scores h1{
-    color: rgb(182, 223, 223);
-    font-size: 25px;
-    
-
-   
-   
-  }
-
-  .final{
-    text-align: center;
-  }
-
-  .scores p{
-    color:rgb(182, 223, 223) ;
-   text-align: center;
-    display: inline-block;
-    padding: 5px;
-    width: 20px;
-    height: 20px;
-    box-shadow: 0 0 5px;
-    margin: auto;
-  }
-
-  input{
-    border-style: none;
-    padding: 5px;
-    width: 20px;
-    border-radius: 5px;
-    color: rgb(155, 67, 126);
-    box-shadow: 0 0 5px rgb(182, 223, 223);
-  }
-
-  button{ 
-    border-style: none;
-    padding: 8px;
-    border-radius: 5px;
-    color: grgb(31, 4, 22);
-    box-shadow: 0 0 2px rgb(182, 223, 223);
-    cursor: pointer;
-  }
-
-  span{
-    display: block;
-    margin: 10px 20% 0px;
-  }
+.new-game button{
+  color: #ae9485;
+  outline: none;
+  border: none;
+  font-size: 2em;
+  font-weight: bold;
+  box-shadow: 0px 0px 5px rgb(241, 229, 229);
+  cursor: pointer;
+  padding: 15px;
+}

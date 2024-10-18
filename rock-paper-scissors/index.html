@@ -5,48 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>rock-paper-scissors</title>
  <link rel="stylesheet" href="style.css">
+ <!-- icons -->
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=cancel" />
 </head>
 <body>
   <div class="container">
   
-    <h5 id="h1">
-      It was my first project and I really enjoyed to<br> creat this game!
-       <a href="https://www.theodinproject.com/lessons/foundations-rock-paper-scissors">Rock  Paper Scissors </a><br>
-       <span> let's play!</span>
-       </h5>
-      <p>
-        Select Rock, Scissers or Paper from  the options below!</p>
-
-   <label for="humanChoice">Select: </label>
-    <select id="humanChoice">
-      <option value="rock">Rock</option>
-      <option value="paper">Paper</option>
-      <option value="scissors">Scissors</option>
-    </select>
-    <button id="submit" onclick= "playRound()">Play </button>
-    <div class="para">
-    <div class="scores">
-      <div1>
-        <h1>user score: </h1>
-          <p id="usescore"> </p>
-         
-       
-      </div1>
-      <div2>
-        <h1>computer score: </h1>
-          <p id="com-score"></p>
-       
-      </div2>
+    <div class="header">
+     <h1>  Rock-Paper-Scissors Game!</h1></div>
+   <h3 class="play"> Select your choice</h3>
+     <div class="btns">
+      <button id="btn1"  onclick="playRound('rock')">👊 </button>
+      <button id="btn2"  onclick="playRound('paper')"> ✋</button>
+      <button id="btn3"  onclick="playRound('scissors')"> ✌️</button>
+     </div> <h3></h3>
+     <div class="display">
+     <div class="computer-display"><h1 id="computer-choice">Computer</h1></div>
+     <div class="player-display"><h1 id="player-choice">Player</h1></div>
+     <div class="result"> <h3 id="result">result </h3></div>
     </div>
 
+      <div class="score">Computer Score:
+       <span id="computer-score"></span> 
+      </div>
+      <div class="score">Player Score:
+        <span id="player-score"></span> 
+       </div>
+      <div class="new-game"></div>
+     
+    </div>
+       
+    
 
-<div class="final" id="addbtn">
-  <h4 id="final"> </h4>
-</div>
-<p id="round"> </p>
-
-  </div>
-</div>
  
   <script src="jas.js"></script>
 </body>
