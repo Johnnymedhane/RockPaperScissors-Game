@@ -171,7 +171,7 @@ button:hover{
   margin: 10px 30px;
 }
 .btns{
-  margin-left: 5px;
+  margin: 5px 5px 20px;
 }
 button{
 margin: 5px;
@@ -181,6 +181,11 @@ font-size: 2.8rem;
   padding: 10px;
   font-size: var(--large-font);
 }
+.result{
+  
+}
+
+
 
 };
 
