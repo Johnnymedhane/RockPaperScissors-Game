@@ -79,7 +79,7 @@ function  setGameOver() {
   human = 0;
   computer = 0;
   const div = document.querySelector(".new-game")
-  btns.forEach( (buttn) => buttn.disabled = true);
+  btns.forEach( (btn) => btn.disabled = true);
   
 resetButton = document.createElement('button');
 resetButton.textContent = 'Play Again';

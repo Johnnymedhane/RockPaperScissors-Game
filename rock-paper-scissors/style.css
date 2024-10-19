@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+:root {
+  --large-font: 25px;
+  --mid-font: 20px;
+  --sm-font: 18px;
+}
 
 html{
   scroll-behavior: smooth;
@@ -39,7 +44,7 @@ border: 1px solid ;
 
 
 .header{
-  font-size: 1.1rem;
+ font-size: var(--mid-font);
   color: hsla(0, 14%, 73%, 0.967);
   margin-bottom: 10px;
  
@@ -47,7 +52,7 @@ border: 1px solid ;
 
 
 .play{
- 
+  font-size: var(--sm-font);
   color: #cfc9c7;;
   float: left;
   margin-right: 15px;
@@ -65,7 +70,7 @@ button{
   outline: none;
   padding: 3px;
   font-size: 3.8rem;
-  background: #734124;
+  background: #c45c20;
   cursor: pointer;
   border-radius: 5px;
   box-shadow: 1px 1px 5px #cfc3bc;
@@ -74,12 +79,12 @@ button{
 }
 button:hover{
   box-shadow: 1px 1px 15px #cfc3bc;
-  background: #37261d;
+  background: #14aa44fa;
 }
 
 
 .display  h1{
-  font-size: 24px;
+  font-size: var(--large-font);
   color: #cfc9c7;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -90,14 +95,15 @@ button:hover{
 
 .score{
  color: #cfc9c7;
- font-size: 20px;
+ font-size: var(--mid-font);
   font-weight: bold;
 }
 
 
 .result{
   color:  hsl(140, 13%, 87%);
-  font-size: 25px;
+  font-size: var(--large-font);
+  margin-bottom: 15px;
 }
 
 .win {
@@ -118,8 +124,8 @@ button:hover{
 
 
 .new-game{
-  margin-top: 10px;
-  text-align: center;
+  margin-top: 15px;
+ padding: 10px 50px;
 }
 
 .new-game button{
@@ -132,4 +138,51 @@ button:hover{
   box-shadow: 0px 0px 5px rgb(241, 229, 229);
   cursor: pointer;
   padding: 15px;
+  transition: all 0.5s;
 }
+
+.new-game button:hover{
+  background: #cfc3bc;
+  color: #433d39;
+}
+
+@media only  screen and  (max-width: 700px) {
+  :root{
+    --large-font: 20px;
+    --mid-font:18px;
+    --sm-font: 14px;
+  }
+  body{
+    display: block;
+  }
+  .container{
+     width: 100%;
+    height:100vh;
+  }
+
+.header{
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.play{
+  float:none;
+  transform: translateY(0);
+  margin: 10px 30px;
+}
+.btns{
+  margin-left: 5px;
+}
+button{
+margin: 5px;
+font-size: 2.8rem;
+} 
+.new-game button{
+  padding: 10px;
+  font-size: var(--large-font);
+}
+
+};
+
+
+  
