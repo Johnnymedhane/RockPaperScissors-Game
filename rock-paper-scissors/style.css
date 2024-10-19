@@ -7,7 +7,7 @@
 }
 
 :root {
-  --large-font: 25px;
+  --large-font: 23px;
   --mid-font: 20px;
   --sm-font: 18px;
 }
@@ -79,7 +79,7 @@ button{
 }
 button:hover{
   box-shadow: 1px 1px 15px #cfc3bc;
-  background: #14aa44fa;
+  background: #b7490ecf;
 }
 
 
